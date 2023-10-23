@@ -57,6 +57,9 @@ def scan_network(folders, subs):
         print("Checking for accessible folders...\n")
         for result in results:
             check_folders(result, folders)
+    input("Press enter to exit...")
+
+
 
 def scan_ip_address(ip_address, results, folders):
     if is_apache_running(ip_address):
